@@ -24,6 +24,7 @@ a {
 .container {
     width: 80%;
     margin: auto;
+    overflow: hidden;
 }
 
 .forte {
@@ -38,6 +39,16 @@ a {
 .hover:hover {
     font-weight: bold;
     color: #F9DFDC;
+    cursor: pointer;
+}
+
+.button1 {
+    color: white;
+    font-weight: bold;
+    background-color: #FF6B6B;
+    height: 38px;
+    border: 0;
+    padding: 0 20px;
     cursor: pointer;
 }
 
@@ -63,3 +74,73 @@ header {
 nav li {
     font-size: 2rem;
 }
+
+/* Showcase */
+#showcase {
+    min-height: 400px;
+    background: url(../img/showcase.jpg) 0 -200px no-repeat;
+    color: white;
+}
+
+#showcase-flex-container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#showcase h1 {
+    font-size: 6rem;
+    margin-bottom: 25px;
+}
+
+#showcase p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: #FF9999;
+    color: white;
+}
+
+#newsletter-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form>input[type="email"] {
+    border: 0;
+    height: 36px;
+    width: 216px;
+}
+
+
+/* Boxes */
+#boxes {
+    margin-top: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.box>img {
+    width: 20%;
+}
+
+.box>p {
+    text-align: center;
+}
+
+#boxes-flex {
+    display: flex;
+    gap: 4rem;
+}
+
